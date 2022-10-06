@@ -18,7 +18,7 @@ def my_function1(ti):
 
 default_args = {
     'owner': 'alex',
-    'retries': 5,
+    'retries': 2,
     'retry_delay': timedelta(minutes=5)
 }
 
@@ -41,3 +41,4 @@ with DAG(
     )
 
     task2 >> task1
+    
